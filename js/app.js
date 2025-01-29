@@ -14,10 +14,9 @@ function adicionar() {
         } else {
             amigos.push(nomeAmigo.value);
             if (listaAmigos.textContent == "") {
-              listaAmigos.textContent = nomeAmigo.value;
+              listaAmigos.textContent = nomeAmigo.value.toUpperCase();
             } else {
-              listaAmigos.textContent =
-                listaAmigos.textContent + ", " + nomeAmigo.value;
+              listaAmigos.textContent = listaAmigos.textContent + ", " + nomeAmigo.value.toUpperCase();
             }
         }
     }
